@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative "mermaid_visualizer"
+
 module GraphAgent
   module Graph
     class StateGraph
@@ -102,6 +104,16 @@ module GraphAgent
           interrupt_after: interrupt_after || [],
           debug: debug
         )
+      end
+
+      # Generate a Mermaid diagram representation of the graph
+      def to_mermaid(options = {})
+        MermaidVisualizer.render(self, options)
+      end
+
+      # Print Mermaid diagram to stdout
+      def print_mermaid(options = {})
+        puts to_mermaid(options)
       end
 
       private

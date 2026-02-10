@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.summary = "A Ruby framework for building stateful, multi-actor agent workflows"
   spec.description = "Ruby port of LangGraph - build stateful, multi-actor applications " \
                      "with LLMs using a graph-based workflow engine with Pregel execution model"
-  spec.homepage = "https://github.com/langchain-ai/langgraph"
+  spec.homepage = "https://github.com/ai-firstly/graph-agent"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
