@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
                        "with LLMs using a graph-based workflow engine with Pregel execution model"
   spec.homepage      = "https://github.com/ai-firstly/graph-agent"
   spec.license       = "MIT"
-  spec.required_ruby_version = ">= 3.1.0"
+  spec.required_ruby_version = [">= 3.1.0", "< 5.0"]
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["homepage_uri"] = spec.homepage
