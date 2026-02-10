@@ -9,7 +9,7 @@ GraphAgent provides low-level infrastructure for building agents that can persis
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'graph_agent'
+gem 'graph-agent'
 ```
 
 And then execute:

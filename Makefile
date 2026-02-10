@@ -40,7 +40,7 @@ build: ## Build the gem
 
 clean: ## Remove build artifacts
 	rm -f *.gem
-	rm -f graph_agent-*.gem
+	rm -f graph-agent-*.gem
 	rm -rf pkg/ tmp/ coverage/ .rspec_status
 
 console: ## Start an interactive console with the gem loaded

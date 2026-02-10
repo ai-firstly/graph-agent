@@ -44,7 +44,7 @@ jobs:
         bundler-cache: true
     
     - name: Build gem
-      run: gem build graph_agent.gemspec
+      run: gem build graph-agent.gemspec
     
     - name: Verify gem can be installed
-      run: gem install graph_agent-*.gem
+      run: gem install graph-agent-*.gem
