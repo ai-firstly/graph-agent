@@ -1,5 +1,7 @@
 # GraphAgent
 
+[![Gem Version](https://badge.fury.io/rb/graph-agent.svg)](https://badge.fury.io/rb/graph-agent) [![CI](https://github.com/ai-firstly/graph-agent/workflows/CI/badge.svg)](https://github.com/ai-firstly/graph-agent/actions/workflows/ci.yml) [![Ruby](https://img.shields.io/badge/ruby-%3E%3D%203.1.0-red.svg)](https://www.ruby-lang.org/) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A Ruby framework for building stateful, multi-actor agent workflows. Ruby port of [LangGraph](https://github.com/langchain-ai/langgraph).
 
 GraphAgent provides low-level infrastructure for building agents that can persist through failures, support human-in-the-loop workflows, and maintain comprehensive memory across sessions.
@@ -455,10 +457,16 @@ GraphAgent implements the Pregel execution model (Bulk Synchronous Parallel):
 | `GraphAgent::START` | Entry point sentinel |
 | `GraphAgent::END_NODE` | Terminal node sentinel |
 
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/ai-firstly/graph-agent.
+
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-## Acknowledgements
+## Links
 
-Inspired by [LangGraph](https://github.com/langchain-ai/langgraph) by LangChain Inc, which is in turn inspired by [Pregel](https://research.google/pubs/pub37252/) and [Apache Beam](https://beam.apache.org/).
+- [GraphAgent Documentation](https://rubydoc.info/gems/graph-agent)
+- [RubyGems](https://rubygems.org/gems/graph-agent)
+- [LangGraph (Python)](https://github.com/langchain-ai/langgraph)
