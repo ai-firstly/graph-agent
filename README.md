@@ -9,7 +9,7 @@ GraphAgent provides low-level infrastructure for building agents that can persis
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'graph_agent'
+gem 'graph-agent'
 ```
 
 And then execute:
@@ -370,6 +370,49 @@ graph.add_sequence([
   ["step3", ->(s) { { result: s[:data] } }]
 ])
 ```
+
+## Visualization
+
+### Mermaid Diagram
+
+Generate a Mermaid flowchart to visualize your graph structure:
+
+```ruby
+# Get Mermaid diagram as string
+mermaid = graph.to_mermaid
+puts mermaid
+
+# Or print directly
+graph.print_mermaid
+```
+
+Output example:
+
+```mermaid
+graph TD
+  classDef start fill:#e1f5e1,stroke:#4caf50,stroke-width:2px
+  classDef end fill:#ffebee,stroke:#f44336,stroke-width:2px
+  classDef node fill:#e3f2fd,stroke:#2196f3,stroke-width:2px,rx:5px
+  classDef condition fill:#fff9c4,stroke:#ffc107,stroke-width:2px
+
+  __start__["START"] --> step1
+  step1 --> step2
+  step2 --> __end__["END"]
+```
+
+For conditional edges:
+
+```mermaid
+graph TD
+  __start__["START"] --> router
+  router --> router_cond_0{"a / b"}
+  router_cond_0 -.->|a| handler_a
+  router_cond_0 -.->|b| handler_b
+  handler_a --> __end__
+  handler_b --> __end__
+```
+
+You can copy the output and paste it into [Mermaid Live Editor](https://mermaid.live) or any Markdown viewer that supports Mermaid diagrams.
 
 ## Architecture
 

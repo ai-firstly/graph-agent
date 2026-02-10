@@ -5,7 +5,7 @@
 Add to your Gemfile:
 
 ```ruby
-gem "graph_agent"
+gem "graph-agent"
 ```
 
 Then run:
@@ -17,7 +17,7 @@ bundle install
 Or install directly:
 
 ```bash
-gem install graph_agent
+gem install graph-agent
 ```
 
 Requires Ruby >= 3.1.0.
