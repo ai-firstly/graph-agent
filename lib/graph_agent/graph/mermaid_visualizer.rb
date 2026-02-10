@@ -129,8 +129,8 @@ module GraphAgent
       def _extract_readable_name(name, node)
         # Try to get a readable name from the action
         action = node.action
-        if action.respond_to?(:name) && !action.name.nil? && !action.name.empty?
-          action.name.split("::").last
+        if action.respond_to?(:name) && !action.name.nil? && !action.name.to_s.empty?
+          action.name.to_s.split("::").last
         else
           name
         end
