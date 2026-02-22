@@ -393,7 +393,7 @@ Output example:
 ```mermaid
 graph TD
   classDef start fill:#e1f5e1,stroke:#4caf50,stroke-width:2px
-  classDef end fill:#ffebee,stroke:#f44336,stroke-width:2px
+  classDef endNode fill:#ffebee,stroke:#f44336,stroke-width:2px
   classDef node fill:#e3f2fd,stroke:#2196f3,stroke-width:2px,rx:5px
   classDef condition fill:#fff9c4,stroke:#ffc107,stroke-width:2px
 

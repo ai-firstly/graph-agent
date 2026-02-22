@@ -59,7 +59,7 @@ RSpec.describe GraphAgent::Graph::MermaidVisualizer do
       mermaid = graph.to_mermaid
 
       expect(mermaid).to include("classDef start")
-      expect(mermaid).to include("classDef end")
+      expect(mermaid).to include("classDef endNode")
       expect(mermaid).to include("classDef node")
       expect(mermaid).to include("classDef condition")
     end
